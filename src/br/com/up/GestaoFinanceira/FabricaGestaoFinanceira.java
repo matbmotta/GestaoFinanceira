@@ -10,7 +10,6 @@ public class FabricaGestaoFinanceira {
             produto.Valor = 435.99;
             compra.produto = produto;
             compra.Quantidade = 10;
-            compra.CalculaValorFornecedor();
         }
         else if(tipoCompra == "CompraNacional"){
             compra= new CompraNacional();
@@ -18,7 +17,6 @@ public class FabricaGestaoFinanceira {
             produto.Valor = 225.99;
             compra.produto = produto;
             compra.Quantidade = 6;
-            compra.CalculaValorFornecedor();
         }
         else if(tipoCompra == "CompraInternacional"){
             compra = new CompraInternacional();
@@ -26,7 +24,6 @@ public class FabricaGestaoFinanceira {
             produto.Valor = 189.90;
             compra.produto = produto;
             compra.Quantidade = 3;
-            compra.CalculaValorFornecedor();
         }
         if(compra == null)
             throw new Exception("Método de compra inválido!!");

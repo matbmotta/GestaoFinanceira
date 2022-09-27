@@ -8,6 +8,10 @@ public class CompraEstado extends Compra {
     public void CalculaValorFornecedor(){
         this.Preco = this.produto.Valor * this.Quantidade;
 
+        System.out.println(" ");
+        System.out.println("-----------------------------------------");
+        System.out.println(" ");
+        System.out.println("Valores da compra dentro do estado:");
         System.out.println("O valor da compra é: " + Preco);
         System.out.println("O valor do estoque é: " + Preco);
     };

@@ -12,6 +12,10 @@ public class CompraNacional extends Compra {
         double totalImposto = icms + iss;
         double valorComFrete = Preco + valorFrete;
 
+        System.out.println(" ");
+        System.out.println("-----------------------------------------");
+        System.out.println(" ");
+        System.out.println("Valores da compra nacional:");
         System.out.println("O valor da compra é: " + Preco);
         System.out.println("O valor do estoque é: " + Preco);
         System.out.println("O valor da compra com o frete é:" + valorComFrete);
