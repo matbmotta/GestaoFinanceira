@@ -2,9 +2,9 @@ package br.com.up.GestaoFinanceira;
 
 public class FabricaGestaoFinanceira {
 
-    public Compra criarCompra(String tipoCompra) throws Exception{
+    public static Compra criarCompra(String tipoCompra) throws Exception{
         Compra compra = null;
-        if(tipoCompra == "br.com.up.GestaoFinanceira.CompraEstado"){
+        if(tipoCompra == "CompraEstado"){
             compra = new CompraEstado();
             Produto produto = new Produto();
             produto.Valor = 435.99;
@@ -12,7 +12,7 @@ public class FabricaGestaoFinanceira {
             compra.Quantidade = 10;
             compra.CalculaValorFornecedor();
         }
-        else if(tipoCompra == "br.com.up.GestaoFinanceira.CompraNacional"){
+        else if(tipoCompra == "CompraNacional"){
             compra= new CompraNacional();
             Produto produto = new Produto();
             produto.Valor = 225.99;
@@ -20,7 +20,7 @@ public class FabricaGestaoFinanceira {
             compra.Quantidade = 6;
             compra.CalculaValorFornecedor();
         }
-        else if(tipoCompra == "br.com.up.GestaoFinanceira.CompraInternacional"){
+        else if(tipoCompra == "CompraInternacional"){
             compra = new CompraInternacional();
             Produto produto = new Produto();
             produto.Valor = 189.90;
